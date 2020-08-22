@@ -1,0 +1,93 @@
+{
+  "data": {
+    "paginationMeta": {
+      "currentPage": 1,
+      "pageSize": 10,
+      "totalCount": 500,
+      "resultCount": 10,
+      "pageCount": 50
+    },
+    "payments": [
+      {
+        "id": 1,
+        "item": "Apple Mac Book 15” 250 SSD 12GB",
+        "price": 73430,
+        "transaction_no": 1234567890,
+        "time": "12:30",
+        "status": "Reconciled"
+      },
+      {
+        "id": 2,
+        "item": "Apple Mac Book 15” 250 SSD 12GB",
+        "price": 73430,
+        "transaction_no": 1234567890,
+        "time": "12:30",
+        "status": "Pending"
+      },
+      {
+        "id": 3,
+        "item": "Apple Mac Book 15” 250 SSD 12GB",
+        "price": 73430,
+        "transaction_no": 1234567890,
+        "time": "12:30",
+        "status": "Reconciled"
+      },
+      {
+        "id": 4,
+        "item": "Apple Mac Book 15” 250 SSD 12GB",
+        "price": 73430,
+        "transaction_no": 1234567890,
+        "time": "12:30",
+        "status": "Reconciled"
+      },
+      {
+        "id": 5,
+        "item": "Apple Mac Book 15” 250 SSD 12GB",
+        "price": 73430,
+        "transaction_no": 1234567890,
+        "time": "12:30",
+        "status": "Pending"
+      },
+      {
+        "id": 6,
+        "item": "Apple Mac Book 15” 250 SSD 12GB",
+        "price": 73430,
+        "transaction_no": 1234567890,
+        "time": "12:30",
+        "status": "Un-reconciled"
+      },
+      {
+        "id": 7,
+        "item": "Apple Mac Book 15” 250 SSD 12GB",
+        "price": 73430,
+        "transaction_no": 1234567890,
+        "time": "12:30",
+        "status": "Reconciled"
+      },
+      {
+        "id": 8,
+        "item": "Apple Mac Book 15” 250 SSD 12GB",
+        "price": 73430,
+        "transaction_no": 1234567890,
+        "time": "12:30",
+        "status": "Un-reconciled"
+      },
+      {
+        "id": 9,
+        "item": "Apple Mac Book 15” 250 SSD 12GB",
+        "price": 73430,
+        "transaction_no": 1234567890,
+        "time": "12:30",
+        "status": "Pending"
+      },
+      {
+        "id": 10,
+        "item": "Apple Mac Book 15” 250 SSD 12GB",
+        "price": 73430,
+        "transaction_no": 1234567890,
+        "time": "12:30",
+        "status": "Reconciled"
+      }
+    ]
+  }
+}

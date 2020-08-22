@@ -16,7 +16,7 @@ const Dashboard = ({ children }) => {
         <Layout>
           <SideBar />
           <Layout>
-            <Content>{children}</Content>
+            <Content className="dashboard-content">{children}</Content>
           </Layout>
         </Layout>
       </Layout>

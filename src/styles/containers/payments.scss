@@ -1,0 +1,75 @@
+.payments {
+  table {
+    .ant-table-thead {
+      .ant-table-cell {
+        font-size: 14px;
+        color: #7F8FA4;
+        background-color: #EAEEF0;
+      }
+    }
+
+    .ant-table-tbody {
+      font-size: 14px;
+      color: #7F8FA4;
+
+      .ant-table-cell {
+        .item-image {
+          display: inline-block;
+          border-radius: 50%;
+          background-color: #7F8FA4;
+          padding: 5px;
+          color: #ffffff;
+          margin-right: 5%;
+        }
+
+        .item-name {
+          color: #414042;
+        }
+
+        .status {
+          display: inline-block;
+          font-size: 12px;
+          border: 1px solid #CCCFD4;
+          border-radius: 30px;
+          width: 100%;
+          max-width: 125px;
+          padding: 7px 10px;
+
+          &::before {
+            content: "";
+            display: inline-block;
+            border-radius: 50%;
+            width: 9px;
+            height: 9px;
+            margin-right: 8%;
+          }
+
+          &.status-reconciled {
+            color: #27AE60;
+
+            &::before {
+              background-color: #27AE60;
+            }
+          }
+
+
+          &.status-pending {
+            color: #EBC315;
+
+            &::before {
+              background-color: #EBC315;
+            }
+          }
+
+          &.status-un-reconciled {
+            color: #7F8FA4;
+
+            &::before {
+              background-color: #7F8FA4;
+            }
+          }
+        }
+      }
+    }
+  }
+}
