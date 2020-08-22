@@ -1,6 +1,9 @@
 .sidebar {
   background-color: #ffffff;
   padding-top: 93px;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 900;
 
   &__generate-btn {
     font-family: 'Roboto', sans-serif;
