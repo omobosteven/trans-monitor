@@ -1,4 +1,10 @@
 .payments {
+  &-title {
+    font-size: 36px;
+    color: #262626;
+    font-weight: 400;
+  }
+
   table {
     .ant-table-thead {
       .ant-table-cell {
@@ -70,6 +76,56 @@
           }
         }
       }
+    }
+  }
+
+  .ant-pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    user-select: none;
+
+    .ant-pagination-total-text {
+      flex-grow: 1;
+      color: #000000;
+      font-size: 13px;
+    }
+
+    .ant-pagination-prev,
+    .ant-pagination-next,
+    .ant-pagination-item {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .ant-pagination-item {
+      border-radius: 0;
+    }
+
+    .ant-pagination-item-active {
+      background-color: #1875F0;
+      border: none;
+
+      a {
+        color: #ffffff;
+      }
+    }
+
+    .ant-pagination-prev,
+    .ant-pagination-next {
+      border: 1px solid #CED0DA;
+      padding: 0 10px;
+
+      a {
+        color: #000000;
+      }
+    }
+
+    .ant-pagination-prev {
+      border-radius: 2px 0 0 2px;
+    }
+    .ant-pagination-next {
+      border-radius:0 2px 2px 0;
     }
   }
 }

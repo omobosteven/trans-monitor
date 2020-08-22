@@ -13,7 +13,7 @@ const Payments = ({ data }) => {
       total: paginationMeta.totalCount,
       showSizeChanger: false,
       showTotal: (total, range) =>
-        `Showing ${range[0]}-${range[1]} of ${total} entries`,
+        `Showing ${range[0]} to ${range[1]} of ${total} entries`,
       itemRender: itemRender,
     });
   }, [paginationMeta]);
@@ -82,6 +82,7 @@ const Payments = ({ data }) => {
 
   return (
     <section className="payments">
+      <h2 className="payments-title">Payments</h2>
       <Table
         columns={columns}
         dataSource={payments}
