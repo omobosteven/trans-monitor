@@ -41,7 +41,7 @@ const Analytics = ({ data }) => {
         </div>
 
         <AreaChart
-          width={730}
+          width={780}
           height={250}
           data={analytics}
           margin={{ top: 30, right: 30, left: 30, bottom: 0 }}
