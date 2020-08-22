@@ -1,0 +1,17 @@
+{
+  "data": {
+    "progress": {
+      "orders": {
+        "pendingOrders": 20,
+        "reconciledOrders": 80,
+        "totalOrders": 100
+      },
+      "payments": {
+        "unReconciledPayments": 20,
+        "reconciledPayments": 80,
+        "totalPayments": 100
+      }
+    },
+    "analytics": {}
+  }
+}

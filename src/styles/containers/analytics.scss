@@ -1,0 +1,65 @@
+.analytics {
+  display: flex;
+  background: #FFFFFF;
+  border: 1px solid #EEF8FD;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  &-graph {
+    flex-basis: 60%;
+  }
+
+  &-progress {
+    flex-basis: 40%;
+    //padding: 10px 25px;
+    border-left: 4px solid #F7F8FA;
+
+    &-orders {
+      border-bottom: 4px solid #F7F8FA;
+    }
+
+    &-orders, &-payments {
+      padding: 20px 40px 20px 30px;
+
+      p  {
+        margin-bottom: 11px;
+        color: #262626;
+        font-size: 14px;
+
+        .pending-value {
+          color: #FDC203;
+          font-weight: 600;
+        }
+
+        .reconciled-value {
+          color: #27AE60;
+          font-weight: 600;
+        }
+
+        .total-value {
+          color: #1875F0;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .analytics-progress-title {
+      font-size: 14px;
+      color: #262626;
+      margin-bottom: 10px;
+    }
+
+    .analytics-progress-bar {
+      height: 5px;
+      width: 100%;
+      border-radius: 30px;
+      margin-bottom: 10px;
+      display: flex;
+
+      span {
+        display: inline-block;
+        height: inherit;
+      }
+    }
+  }
+}
