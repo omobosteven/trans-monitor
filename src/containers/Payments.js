@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { DownOutlined } from '@ant-design/icons';
-import { Table } from 'antd';
+import Icon, { DownOutlined } from '@ant-design/icons';
+import { Table, Select, Input } from 'antd';
 
 import '../styles/containers/payments.scss';
+import SearchIcon from '../images/search-icon.svg';
+
+const { Option } = Select;
 
 const Payments = ({ data }) => {
   const [pagination, setPagination] = useState({});
@@ -82,12 +85,39 @@ const Payments = ({ data }) => {
 
   return (
     <section className="payments">
-      <h2 className="payments-title">Payments</h2>
+      <h2 className="payments__title">Payments</h2>
+      <div className="payments__table-filters">
+        <div className="data-filter">
+          <span>Showing</span>
+          <Select defaultValue={20} bordered={false}>
+            <Option value={10}>10</Option>
+            <Option value={20}>20</Option>
+            <Option value={30}>30</Option>
+          </Select>
+          <span>out of 500 payments</span>
+        </div>
+        <div className="data-search">
+          <Input
+            placeholder="Search payments"
+            prefix={<Icon component={SearchIcon} />}
+            bordered={false}
+          />
+        </div>
+        <div className="status-filter">
+          <span>Show</span>
+          <Select defaultValue="all">
+            <Option value="all">All</Option>
+            <Option value="reconciled">Reconciled</Option>
+            <Option value="un-reconciled">Un-reconciled</Option>
+            <Option value="settled">Settled</Option>
+            <Option value="unsettled">Unsettled</Option>
+          </Select>
+        </div>
+      </div>
       <Table
         columns={columns}
         dataSource={payments}
         pagination={pagination}
-        // loading={loading}
         rowKey={(record) => record.id}
         className="payments-table"
       />

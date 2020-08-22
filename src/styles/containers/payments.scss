@@ -1,8 +1,67 @@
 .payments {
-  &-title {
+  &__title {
     font-size: 36px;
     color: #262626;
     font-weight: 400;
+  }
+
+  &__table-filters {
+    display: flex;
+    margin-bottom: 20px;
+
+    .data-filter {
+      margin-right: 5%;
+      font-size: 13px;
+
+      .ant-select-selection-item, .ant-select-arrow {
+        color: #1875F0;
+      }
+
+      .ant-select-selection-item {
+        font-size: 14px;
+      }
+    }
+
+    .data-search {
+      flex-basis: 45%;
+
+      .ant-input-affix-wrapper {
+        width: 55%;
+        border-bottom: 0.5px solid #787878;
+        padding-left: 0;
+      }
+    }
+
+    .status-filter {
+      font-size: 13px;
+      color: #000000;
+
+      .ant-select {
+        margin-left: 20px;
+        width: 150px;
+
+        &:focus {
+          outline: none;
+        }
+
+        .ant-select-arrow {
+          color: #1875F0;
+        }
+      }
+
+      .ant-select .ant-select-selector {
+        border: 1px solid #CED0DA;
+        border-radius: 2px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .ant-select-focused.ant-select-single .ant-select-selector {
+        box-shadow: none;
+      }
+    }
   }
 
   table {
@@ -127,5 +186,17 @@
     .ant-pagination-next {
       border-radius:0 2px 2px 0;
     }
+  }
+}
+
+
+.ant-select-dropdown {
+  .ant-select-item-option-selected {
+    background-color: #F4F4F4;
+  }
+
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    color: #414042;
+    font-weight: normal;
   }
 }

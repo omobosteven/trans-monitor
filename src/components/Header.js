@@ -18,6 +18,7 @@ const HeaderComponent = () => {
           <Input
             placeholder="Search..."
             prefix={<Icon component={SearchIcon} />}
+            bordered={false}
           />
         </li>
         <li className="header__nav-item">Support</li>
