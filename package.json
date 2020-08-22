@@ -16,7 +16,8 @@
     "antd": "^4.5.4",
     "parcel-plugin-svg-react": "^1.0.4",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "eslint": "^7.7.0",

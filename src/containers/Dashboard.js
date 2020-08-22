@@ -8,7 +8,7 @@ import '../styles/containers/dashboard.scss';
 
 const { Content } = Layout;
 
-const Dashboard = () => {
+const Dashboard = ({ children }) => {
   return (
     <>
       <Layout className="dashboard-layout">
@@ -16,7 +16,7 @@ const Dashboard = () => {
         <Layout>
           <SideBar />
           <Layout>
-            <Content>Content</Content>
+            <Content>{children}</Content>
           </Layout>
         </Layout>
       </Layout>

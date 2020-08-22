@@ -1,0 +1,27 @@
+.statcard {
+  background-color: #ffffff;
+  border-radius: 2px;
+  border: 1px solid #EEF8FD;
+  //max-width: 253px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  flex: 0 0 21%;
+
+  &:nth-child(3) {
+    margin-left: 5%;
+  }
+
+  &__content {
+    .statcard__content-title {
+      font-size: 12px;
+      color: #787C90;
+    }
+
+    .statcard__content-value {
+      font-size: 18px;
+      color: #262626;
+    }
+  }
+}
