@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(79, 79, 79, 0.07);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  &__logo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: #1875F0;
+    margin-right: 101px;
+  }
+
+  &__nav-items {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    color: #647787;
+  }
+
+  &__nav-items .header__notification {
+    position: relative;
+
+    .notification-num {
+      font-size: 10px;
+      line-height: 13px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      background-color: #1860EC;
+      top: 18px;
+      right: -2px;
+      color: #FCFDFF;
+    }
+  }
+
+  &__nav-items .header__nav-item {
+    &:first-child {
+      flex-basis: 60%;
+
+      .ant-input-affix-wrapper {
+        width: auto;
+        border: none;
+      }
+
+      .ant-input-affix-wrapper:focus {
+        box-shadow: none;
+      }
+    }
+
+    &:last-child {
+      display: flex;
+      align-items: center;
+      line-height: 1.2;
+
+      .header__user {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+
+    .header__user-img {
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      margin-left: 12px
+    }
+  }
+}

@@ -11,6 +11,10 @@
   "author": "omobo stephen",
   "license": "MIT",
   "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "@svgr/parcel-plugin-svgr": "^5.4.0",
+    "antd": "^4.5.4",
+    "parcel-plugin-svg-react": "^1.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -22,6 +26,7 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
     "parcel-bundler": "^1.12.4",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "sass": "^1.26.10"
   }
 }
