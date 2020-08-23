@@ -12,6 +12,7 @@ import {
   CartesianGrid,
   Tooltip,
   Area,
+  ResponsiveContainer,
 } from 'recharts';
 
 import '../styles/containers/analytics.scss';
@@ -40,38 +41,38 @@ const Analytics = ({ data }) => {
           </div>
         </div>
 
-        <AreaChart
-          width={780}
-          height={250}
-          data={analytics}
-          margin={{ top: 30, right: 30, left: 30, bottom: 0 }}
-        >
-          <defs>
-            <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#0296ff" stopOpacity={0.8} />
-              <stop offset="95%" stopColor="#0296ff" stopOpacity={0.1} />
-            </linearGradient>
-          </defs>
-          <XAxis
-            dataKey="date"
-            mirror
-            tick={<CustomXAxis />}
-            orientation="top"
-            axisLine={false}
-            interval={4}
-          />
-          <YAxis hide />
-          <CartesianGrid stroke="#CFE8FB" horizontal={false} />
-          <Tooltip />
-          <Area
-            type="natural"
-            dataKey="amt"
-            stroke="#8884d8"
-            fillOpacity={1}
-            fill="url(#colorUv)"
-            connectNulls={true}
-          />
-        </AreaChart>
+        <ResponsiveContainer width="100%" height="80%">
+          <AreaChart
+            data={analytics}
+            margin={{ top: 30, right: 30, left: 30, bottom: 0 }}
+          >
+            <defs>
+              <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#0296ff" stopOpacity={0.8} />
+                <stop offset="95%" stopColor="#0296ff" stopOpacity={0.1} />
+              </linearGradient>
+            </defs>
+            <XAxis
+              dataKey="date"
+              mirror
+              tick={<CustomXAxis />}
+              orientation="top"
+              axisLine={false}
+              interval={4}
+            />
+            <YAxis hide />
+            <CartesianGrid stroke="#CFE8FB" horizontal={false} />
+            <Tooltip />
+            <Area
+              type="natural"
+              dataKey="amt"
+              stroke="#8884d8"
+              fillOpacity={1}
+              fill="url(#colorUv)"
+              connectNulls={true}
+            />
+          </AreaChart>
+        </ResponsiveContainer>
       </div>
       <div className="analytics-progress">
         <div className="analytics-progress-orders">
